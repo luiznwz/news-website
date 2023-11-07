@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header wrapper">
+      <a href="/">
+      <img class="header__logo" src="/img/logo.svg" alt="Homepage" width="64" height="40">
+      </a>
+      <nav>
+         <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">New</a>
+          </li>
+          <li>
+            <a href="">Popular</a>
+          </li>
+          <li>
+            <a href="">Trending</a>
+          </li>
+          <li>
+            <a href="">Categories</a>
+          </li>
+         </ul>
+      </nav> 
+    </header>
+    <main>
+      <article class="wrapper grid">  
+        <section class="feature">
+          <picture> 
+            <source
+              media="(min-width: 1024px)"
+              srcset="/img/feature-desktop.jpg 1x,
+              /img/feature-desktop-2x.jpg 2x,">
+            <img 
+              class="feature__image"
+              src="/img/feature-mobile.jpg" alt="assertment colorful blocks"
+              srcset="/img/feature-mobile-2x.jpg 2x">
+          </picture>
+
+          <h1 class="feature__headline">The Bright Future of Web 3.0</h1>
+          <p class="feature__description">
+            We dive into the next evolution of the web that
+            claims to put the power of the platforms back
+            into the hands of the people. But is it really
+            fulfilling its promise? 
+          </p>
+          <a class="feature__botton " href="">Read More </a>
+        </section>
+        <section class="new">
+            <h2>New</h2>
+            <article class="new__post">
+              <h3 class="new__headline">
+                <a href="">Hydrogen VS Electric Cars</a>
+              </h3>
+              <p class="new__description">Will hydrogen-fueled cars ever catch up to Evs?</p>
+            </article>
+            <h2>New</h2>
+            <article class="new__post">
+              <h3 class="new__headline">
+                <a href="">The Downsides of AI Artistry</a>
+              </h3>
+              <p class="new__description">What are the possible adverse effects of on-demand AI image generation?</p>
+            </article>
+            <h2>New</h2>
+            <article class="new__post">
+              <h3 class="new__headline">
+                <a href="">Is VC Funding Drying Up?</a>
+              </h3>
+              <p class="new__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </article>  
+        </section>
+        <section class="blog">
+          <aritcle class="blog__item">
+            <img src="/img/news-1.jpg" alt="retro computer, keyboard, cassette tapes on a desk" class="blog__image">
+            <div class="blog__number">01</div>
+            <h3 class="blog__headline"><a href="">Reviving Retro PCs</a></h3>
+            <p class="blog__description">What happens when old PCs are given modern upgrades?</p>
+          </aritcle>
+          <aritcle class="blog__item">
+            <img src="/img/news-2.jpg" alt="keyboard with red backlighting" class="blog__image">
+            <div class="blog__number">02</div>
+            <h3 class="blog__headline"><a href="">Top 10 Laptops of 2022</a></h3>
+            <p class="blog__description">Our best picks for various needs and budgets</p>
+          </aritcle>
+          <aritcle class="blog__item">
+            <img src="/img/news-3.jpg" alt="game controller in the air above a hand" class="blog__image">
+            <div class="blog__number">03</div>
+            <h3 class="blog__headline"><a href="">The Growth of Gaming</a></h3>
+            <p class="blog__description">How the pandemic has sparked fresh oppportunities</p>
+          </aritcle>
+        </section>
+      </article>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
