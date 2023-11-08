@@ -1,0 +1,28 @@
+ @use '../util' as u;
+
+ .feature{
+    &__image {
+
+    }
+
+    &__headline {
+        font-size: u.rem(40);
+        font-size: clamp(u.rem(40), 2.147887323943662rem + 1.5023474178403755vw, u.rem(56)); //40px, 56px
+        font-weight: 800;
+    }
+
+    &__description {
+        
+    }
+
+    &__botton {
+        display: inline-block;
+        background-color: var(--c-red);
+        font-size: u.rem(14);
+        color: var(--c-write);
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        padding: u.rem(12) u.rem(32);
+    }
+ }

@@ -1,0 +1,15 @@
+@use '../util' as u;
+
+.new{
+    &__post {
+        background-color: var(--c-blue);
+    }
+
+    &__headline {
+
+    }
+
+    &__description {
+        
+    }
+}
