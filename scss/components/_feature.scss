@@ -7,7 +7,7 @@
 
     &__headline {
         font-size: u.rem(40);
-        font-size: clamp(u.rem(40), 2.147887323943662rem + 1.5023474178403755vw, u.rem(56)); //40px, 56px
+        font-size: var(--f-xl);
         font-weight: 800;
     }
 

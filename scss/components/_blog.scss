@@ -1,0 +1,33 @@
+@use '../util' as u;
+
+.blog{
+    display: grid;
+    gap: u.rem(30);
+
+    &__item {
+        display: grid;
+        grid-template-columns: u.rem(100) auto;
+        grid-template-rows: (3, auto);
+        gap: u.rem(24);
+    }
+
+    &__image {
+        grid-row: 1 / 4;
+    }
+
+    &__number {
+        color: var(--c-silver);
+        font-size: var(--f-m);
+        font-weight: 700;
+        line-height: 1;
+
+    }
+
+    &__headline {
+
+    }
+
+    &__description {
+         
+    }
+}

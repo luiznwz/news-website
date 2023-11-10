@@ -1,15 +1,33 @@
 @use '../util' as u;
 
 .new{
-    &__post {
-        background-color: var(--c-blue);
+    background-color: var(--c-blue);
+    padding: u.rem(24) u.rem(20);
+
+    &__title {
+        color: var(--c-yellow);
+        font-size: var(--f-l)
+        
+    }
+
+    &__post{
+        border-block-end: 1px solid var(--c-gray);
+        padding-block: u.rem(30);
+
+        &:last-child {
+            border: none;
+        }
     }
 
     &__headline {
-
+        font-size: u.rem(20);
+        margin-block-end: u.rem(8 );
+        font-weight: 800;
+        color: var(--c-write);
     }
 
     &__description {
-        
+        font-size: u.rem(15);
+        color: var(--c-silver);
     }
 }
