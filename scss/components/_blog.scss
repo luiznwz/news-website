@@ -8,7 +8,7 @@
         display: grid;
         grid-template-columns: u.rem(100) auto;
         grid-template-rows: (3, auto);
-        gap: u.rem(24);
+        gap: u.rem(10) u.rem(24);
     }
 
     &__image {
@@ -24,10 +24,18 @@
     }
 
     &__headline {
+        align-self: center;
 
+        a {
+            color: var(--c-blue);
+            font-size: var(--f-xs);
+            font-weight: 800;
+            line-height: 1.1;
+        }
     }
 
     &__description {
+        align-self: end;
          
     }
 }

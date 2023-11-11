@@ -20,14 +20,15 @@
     }
 
     &__headline {
-        font-size: u.rem(20);
+        display: inline-block;
+        font-size: var(--f-s);
         margin-block-end: u.rem(8 );
         font-weight: 800;
         color: var(--c-write);
     }
 
     &__description {
-        font-size: u.rem(15);
+        font-size: var(--f-body);
         color: var(--c-silver);
     }
 }
