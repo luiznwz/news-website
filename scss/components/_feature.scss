@@ -1,6 +1,23 @@
  @use '../util' as u;
 
  .feature{
+    display: grid;
+    gap: u.rem(24);
+    @media (width >= u.em(1110)){
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+    }
+    
+    &__picture {
+      @media (width >= u.em(1110)){
+        grid-column: 1 / 3;
+    }
+         
+         
+    }
+
     &__image {
 
     }
@@ -16,6 +33,7 @@
     }
 
     &__botton {
+        justify-self: start;
         display: inline-block;
         background-color: var(--c-red);
         font-size: u.rem(14);

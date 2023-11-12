@@ -51,7 +51,7 @@ a {
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -67,4 +67,15 @@ li {
 .wrapper {
     width: min(u.rem(1110), calc(100% - u.rem(32) ));
     margin-inline: auto ;
+}
+
+.grid {
+    display: grid;
+    gap: u.rem(64);
+
+    @media (width >= u.em(1110)) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (300) auto auto;
+        gap: u.rem(30);
+    } 
 }
