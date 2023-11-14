@@ -4,11 +4,18 @@
     display: grid;
     gap: u.rem(30);
 
+    @media (width >= u.em(1110)) {
+        grid-template-columns: subgrid;
+        grid-column: 1 / -1;
+        padding-block-start: u.rem(30);
+    }
+
     &__item {
         display: grid;
         grid-template-columns: u.rem(100) auto;
         grid-template-rows: (3, auto);
         gap: u.rem(10) u.rem(24);
+
     }
 
     &__image {
@@ -25,12 +32,16 @@
 
     &__headline {
         align-self: center;
-
+        
         a {
             color: var(--c-blue);
             font-size: var(--f-xs);
             font-weight: 800;
             line-height: 1.1 ;
+
+            &:hover {
+                color: var(--c-red);
+            }
         }
     }
 

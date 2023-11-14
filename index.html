@@ -16,7 +16,7 @@
       <img class="header__logo" src="/img/logo.svg" alt="Homepage" width="64" height="40">
       </a>
       <nav>
-         <ul>
+         <ul class="header__links">
           <li>
             <a class="header__link" href="">Home</a>
           </li>
@@ -40,7 +40,7 @@
         <section class="feature">
           <picture class="feature__picture"> 
             <source
-              media="(min-width: 1024px)"
+              media="(min-width: 43.75em)"
               srcset="/img/feature-desktop.jpg 1x,
               /img/feature-desktop-2x.jpg 2x,">
             <img 
@@ -49,15 +49,16 @@
               src="/img/feature-mobile.jpg" alt="assertment colorful blocks"
               srcset="/img/feature-mobile-2x.jpg 2x">
           </picture>
-
           <h1 class="feature__headline">The Bright Future of Web 3.0</h1>
-          <p class="feature__description">
-            We dive into the next evolution of the web that
-            claims to put the power of the platforms back
-            into the hands of the people. But is it really
-            fulfilling its promise? 
-          </p>
-          <a class="feature__botton " href="">Read More </a>
+          <div class="feature__description">
+            <p>
+              We dive into the next evolution of the web that
+              claims to put the power of the platforms back
+              into the hands of the people. But is it really
+              fulfilling its promise? 
+            </p>
+            <a class="feature__botton " href="">Read More </a>
+          </div>
         </section>
         <section class="new">
             <h2 class="new__title">New</h2>
