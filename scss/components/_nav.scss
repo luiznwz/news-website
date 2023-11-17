@@ -12,12 +12,15 @@
         }
     }
 
-    &__open {
-
+    &__open [aria-expanded='true']{
+        .nav_content {
+            translate: 0;
+        }
     }
 
     &__content {
         @media (width < u.em(1110)){
+            display: none;
             position: fixed;
             inset: 0 0 0 u.rem(120);
             background-color: var(--c-write);
@@ -34,6 +37,7 @@
     }
 
     &__overlay {
+        display: none;
         position: fixed;
         inset: 0;
         background-color: var(--c-blue);
