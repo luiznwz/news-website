@@ -13,8 +13,12 @@
     }
 
     &__open [aria-expanded='true']{
-        .nav_content {
+       ~ .nav__content {
             translate: 0;
+        }
+
+        ~ .nav__overlay {
+            opacity: 0,5;
         }
     }
 
@@ -43,5 +47,6 @@
         background-color: var(--c-blue);
         opacity: 0;
         transition: opacity 300ms ease-in-out;
+        pointer-events: none;
     }
 }
