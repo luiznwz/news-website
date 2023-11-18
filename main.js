@@ -1,6 +1,7 @@
 import './scss/style.scss';
 
 const body = document.querySelector('body');
+const main = document.querySelector('main');
 const btnOpen = document.querySelector('#btnOpen');
 const btnClose = document.querySelector('#btnClose');
 const media = window.matchMedia('(width < 69.375em)');
@@ -12,6 +13,9 @@ function openMobileMenu() {
 
     btnOpen.setAttribute('aria-expanded', 'true');
     body.classList.add('noscroll');
+    navContent.removeAttribute('inert');
+    main.setAttribute('inert', '');
+    btnClose.focus();
 }
 
 function closeMobileMenu() {
@@ -19,11 +23,16 @@ function closeMobileMenu() {
 
     btnOpen.setAttribute('aria-expanded', 'false');
     body.classList.remove('noscroll');
+    navContent.setAttribute('inert', '');
+    main.removeAttribute('inert');
+    btnOpen.focus();
 }
 
 function setupNav(e){
     if (e.matches) { // mobile
         console.log('is mobile');
+
+        navContent.setAttribute('inert', '');
 
         setTimeout(() => {
             navContent.style.display = 'block';
@@ -32,6 +41,10 @@ function setupNav(e){
     } else {
         //desktop
         console.log('is desktop');
+
+        navContent.removeAttribute('inert');
+        main.removeAttribute('inert');
+
         navContent.style.display = '';
     }
 }
@@ -47,3 +60,8 @@ media.addEventListener('change', function (e) {
 });
 
 
+document.addEventListener('keyup', (e) => {
+ if(e.key == 'Tab') {
+    console.log(document.activeElement);
+ }
+});

@@ -13,8 +13,12 @@
     }
 
     &__open[aria-expanded='true']{
-       ~ .nav__content {
+        ~ .nav__content {
          translate: 0;
+
+        @media (prefers-reduced-motion){
+            opacity: 1; 
+         }
         }
 
         ~ .nav__overlay {
@@ -31,6 +35,12 @@
             padding: u.rem(30);
             translate: 100vw 0;
             transition: translate 500ms ease-in-out;
+        }
+
+        @media (prefers-reduced-motion) {
+            translate: 0;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
         }
     }
 
