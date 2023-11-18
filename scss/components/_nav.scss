@@ -12,9 +12,9 @@
         }
     }
 
-    &__open [aria-expanded='true']{
+    &__open[aria-expanded='true']{
        ~ .nav__content {
-            translate: 0;
+         translate: 0;
         }
 
         ~ .nav__overlay {
